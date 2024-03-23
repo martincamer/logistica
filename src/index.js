@@ -16,10 +16,7 @@ const io = new Server(httpServer, {
   cors: {
     origin: ORIGIN,
     credentials: true,
-    methods: ["GET", "POST", "DELETE", "PUT"],
-    allowedHeaders: ["Access-Control-Allow-Origin"],
   },
-  maxHttpBufferSize: 1e8,
 });
 
 // Maneja eventos de Socket.io
