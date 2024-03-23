@@ -23,7 +23,7 @@ export const SalidasProvider = ({ children }) => {
 
   // Efecto para establecer la conexión del socket
   useEffect(() => {
-    const newSocket = io("/", {
+    const newSocket = io("https://logistica-production-0eb0.up.railway.app", {
       withCredentials: true,
       extraHeaders: {
         "my-custom-header": "value",

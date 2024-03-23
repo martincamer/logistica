@@ -11,7 +11,7 @@ export const ModalEliminar = ({ eliminarModal, closeEliminar, obtenerId }) => {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    const newSocket = io("/", {
+    const newSocket = io("https://logistica-production-0eb0.up.railway.app", {
       withCredentials: true,
     });
 
