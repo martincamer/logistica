@@ -13,9 +13,6 @@ export const ModalEliminar = ({ eliminarModal, closeEliminar, obtenerId }) => {
   useEffect(() => {
     const newSocket = io("/", {
       withCredentials: true,
-      extraHeaders: {
-        "my-custom-header": "value",
-      },
     });
 
     setSocket(newSocket);
