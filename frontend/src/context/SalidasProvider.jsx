@@ -19,7 +19,7 @@ export const useSalidasContext = () => {
 export const SalidasProvider = ({ children }) => {
   const [salidasMensuales, setSalidasMensuales] = useState([]);
   const [choferes, setChoferes] = useState([]);
-  // const [socket, setSocket] = useState(null);
+  const [socket, setSocket] = useState(null);
 
   // Efecto para establecer la conexión del socket
   useEffect(() => {
